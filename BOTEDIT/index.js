@@ -136,7 +136,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["55558185780771@s.whatsapp.net"] // COLOQUE SEU NÚMERO AQUI SEM ESPAÇOS
+			const ownerNumber = ["558185780771@s.whatsapp.net"] // COLOQUE SEU NÚMERO AQUI SEM ESPAÇOS
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -615,22 +615,22 @@ break
 					reply(anu)
 					break
 //NAO FUNCIONA MAIS	
-		
-				case 'simih':
+                
+                case 'simih':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('O modo SIM está ativo')
+						if (isSimi) return reply('Mode simi sudah aktif')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativou com sucesso o modo simi neste grupo✔️')
+						reply('Sukses mengaktifkan mode simi di group ini ✔️')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativou com sucesso o modo simi neste grupo✔️ ✔️')
+						reply('Sukes menonaktifkan mode simi di group ini ✔️')
 					} else {
-						reply('1 para ativar, 0 para desativar')
+						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
 					break
 
@@ -680,7 +680,7 @@ break
 							reply(err)
 						})
 					} else {
-						reply('MENSAGEM DIZENDO QUE SO ACEITA FOTOS')
+						reply('Só aceito fotos')
 					}
 					break
 				default:
@@ -695,7 +695,9 @@ break
                            }
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
-		}
+                  }
 	})
 }
 starts()
+               
+           
