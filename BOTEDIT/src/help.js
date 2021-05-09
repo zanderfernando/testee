@@ -1,38 +1,34 @@
 const help = (prefix) => {
 	return `════ ◤ *𝐙𝐀𝐍𝐃𝐄𝐑 𝐁𝐎𝐓☔* ◢
 ║╔════════════
-║╠ *Nomedobot* :𝐙𝐀𝐍𝐃𝐄𝐑 𝐁𝐎𝐓
-║╠ *Prefix* : *. 
+║╠ *「𝐙𝐀𝐍𝐃𝐄𝐑 𝐁𝐎𝐓☔」*
+║╠ *Prefix* : */ 
 ║╚════════════
-║╠❏➛*.wait
-║╠❏➛*.welcome 1/0
-║╠❏➛*.simih 1/0
-║╠❏➛*.toimg
-║╠❏➛*.leave
-║╠❏➛*.linkgroup
-║╠❏➛*.listadmins
-║╠❏➛*.kick
-║╠❏➛*.add
-║╠❏➛*.demote
-║╠❏➛*.promote
-║╠❏➛*.bc
-║╠❏➛*.clearall
-║╠❏➛*.tagall
-║╠❏➛*.tsticker
-║╠❏➛*.url2img
-║╠❏➛*.tulis
-║╠❏➛*.stalk
-║╠❏➛*.ytsearch
-║╠❏➛*.yt2mp3
-║╠❏➛*.hilih
-║╠❏➛*.setprefix
-║╠❏➛*.memeindo
-║╠❏➛*.figu
-║╠❏➛*.fig
-║╠❏➛*.ocr
-║╠❏➛*.blocklist
-║╠❏➛*.info
-║╠❏➛*.antilink 1/0
+║╠❏➛*${prefix}wait
+║╠❏➛*${prefix}welcome 1/0
+║╠❏➛*${prefix}simih 1/0
+║╠❏➛*${prefix}toimg
+║╠❏➛*${prefix}linkgroup
+║╠❏➛*${prefix}listadmins
+║╠❏➛*${prefix}kick
+║╠❏➛*${prefix}add
+║╠❏➛*${prefix}demote
+║╠❏➛*${prefix}promote
+║╠❏➛*${prefix}bc
+║╠❏➛*${prefix}tagall
+║╠❏➛*${prefix}tsticker
+║╠❏➛*${prefix}url2img
+║╠❏➛*${prefix}tulis
+║╠❏➛*${prefix}stalk
+║╠❏➛*${prefix}ytsearch
+║╠❏➛*${prefix}yt2mp3
+║╠❏➛*${prefix}hilih
+║╠❏➛*${prefix}memeindo
+║╠❏➛*${prefix}figu
+║╠❏➛*${prefix}ocr
+║╠❏➛*${prefix}blocklist
+║╠❏➛*${prefix}setprefix
+╚═══════════════════
 ║╔▸﹝ *𝐂𝐑𝐈𝐀𝐃𝐎𝐑* ﹞ 
 ║╠❏ Criador:ᬊ͜͡🔥↯𝜡么ᜰ𝔇𝚵𝜞↯♞᭄
 ║╠❏ Número: wa.me/558185780771
@@ -40,7 +36,6 @@ const help = (prefix) => {
 ║╠❏ Parceria:😬
 ║╚▸
 ╚═══ ◤ *𝐙𝐀𝐍𝐃𝐄𝐑 𝐁𝐎𝐓☔* ◢
-
 `
 }
 

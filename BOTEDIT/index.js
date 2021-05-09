@@ -320,7 +320,7 @@ break
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
-					reply(`MENSAGEM DE QUANDO VC MUDA O SINAL QUE O BOT USA NOS COMANDOS: ${prefix}`)
+					reply(`prefix modificado com sucesso!: ${prefix}`)
 					break
 				/*case 'loli':
 					loli.getSFWLoli(async (err, res) => {
@@ -366,8 +366,8 @@ break
 					reply(teks.trim())
 					break
 			
-				case 'yt2mp3':
-					if (args.length < 1) return reply('CADE O LINK?')
+				case 'bot':
+					if (args.length < 1) return reply('oi')
 					if (!isUrl(args[0]) && !args[0].includes('.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbar.tech/api/?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
@@ -621,16 +621,16 @@ break
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('Mode simi sudah aktif')
+						if (isSimi) return reply('O modo SIM está ativo')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Sukses mengaktifkan mode simi di group ini ✔️')
+						reply('Ative o modo simi com sucesso neste grupo✔️')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Sukes menonaktifkan mode simi di group ini ✔️')
+						reply('Ative o modo simi com sucesso neste grupo✔️')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+						reply('1 para ativar, 0 para desativar')
 					}
 					break
 
@@ -642,7 +642,7 @@ break
 						if (isWelkom) return reply('JÁ TÁ ATIVO LEK')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Sukses mengaktifkan fitur welcome di group ini ✔️')
+						reply('Ativou com sucesso o modo boas vindas neste grupo✔️')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
@@ -655,7 +655,7 @@ break
 			//case 'clone':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Tag target yang ingin di clone')
+					if (args.length < 1) return reply('sla')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -665,7 +665,7 @@ break
 						client.updateProfilePicture(botNumber, buffer)
 						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Gagal om')
+						reply('O falha')
 					}
 					break
 			
